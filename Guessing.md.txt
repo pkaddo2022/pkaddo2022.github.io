@@ -1,0 +1,19 @@
+flowchart TD
+     A[Start] --> B[Computer selects random number]
+    B --> C[User inputs guess]
+    C --> D{Is guess correct?}
+    D -->|Yes| E[User wins!]
+    D -->|No| F{Is guess too high or too low?}
+    F -->|Too high| G[Notify: Guess is too high]
+    F -->|Too low| H[Notify: Guess is too low]
+    G --> C
+    H --> C
+    E --> I[End]
+
+
+Description
+the computer will select a random number
+the user will guess what that number is suppose to be 
+there are 3 paths depending on how high or low the number is
+if the guess is correct the user wins.
+if the user guess the answer to be incorrect the computer will notify the user that their answer is either too low or too high compared to the computer generated answer. 
